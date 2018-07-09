@@ -48,7 +48,7 @@ class App extends React.Component {
         <div className="page">
         
       <div className="content">
-        
+        <div className="bar"/>
         <nav className="navbar navbar-light">
           <div className="nav navbar-nav">
 
@@ -64,6 +64,7 @@ class App extends React.Component {
             <Route path="/category" component={Category}/>
             <Route path="/products" component={Products}/>
         </Switch>
+        <div className="bar"/>
         <div className="title">
             <img src={Title} alt="Title" />
         </div>

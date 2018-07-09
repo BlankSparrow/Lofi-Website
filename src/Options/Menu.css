@@ -1,81 +1,36 @@
 .menuContainer{
     position: fixed;
-    left: 2em;
-    right: 2em;
-    top: 2em;
-    bottom: 2em;
+    top: 0vw; 
+    left: 0vw;
+    right: 0vw;
+    bottom: 0vh;
     pointer-events: none;
 }
 
 .menuMask{
-    position:relative;
-    transform: scaleX(0.01%);
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    right: 0px;
-    background-color: deeppink;
-    transition: 500ms;
-    transition-timing-function: cubic-bezier(0.12,0.0,0.23,1);
-    pointer-events: none;
-}
-
-.menuMask.Active{
-    transform: scaleX(10%);
-    will-change: transform;
-    pointer-events: all;
-}
-
-.menuContent{
-    position:absolute;
-    left: 4em;
-    width: 100%;
-    bottom: 4em;
-    font-size:12pt;
-    pointer-events: all;
-}
-
-.menuButton{
-    position: fixed;
-    right: 2em;
-    bottom: 2em;
-
-    pointer-events: all;
-}
-
-#svg{
-    transition: 300ms;
-}
-
-////////////////////////////////////////////////////////
-.menuContainer{
-    position: fixed;
-    left: 2em;
-    right: 2em;
-    top: 2em;
-    bottom: 2em;
-    pointer-events: none;
-}
-
-.menuMask{
-    position:relative;
-    width: 0.01%;
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    right: 0px;
+    position:fixed;
+    height: 70vh;
+    bottom: 2vh;
+    right: 2vw;
     background-color: deeppink;
     overflow: hidden;
     clip-path: inset(0 0 0 0);
-    transition: 300ms;
-    
+    transition: 150ms;    
     transition-timing-function: cubic-bezier(0.12,0.0,0.23,1);
-    pointer-events: none;
+    pointer-events: all;
 }
 
-.menuMask.Active{
-    width: 100%;
-        pointer-events: all;
+.menuMaskTitle{
+    position:fixed;
+    height: 70vh;
+    top: 2vh;
+    right: 2vw;
+    background-color: deeppink;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);
+    transition: 150ms;    
+    transition-timing-function: cubic-bezier(0.12,0.0,0.23,1);
+    pointer-events: all;
 }
 
 .menuContent{
@@ -89,8 +44,8 @@
 
 .menuOptions{
     position: fixed;
-    bottom: 4em;
-    left: 4em;
+    bottom: 5vh;
+    left: 5vw;
     color: white;
     
 }
@@ -109,8 +64,8 @@ p.menuOptionsItem:hover{
 
 .menuButton{
     position: fixed;
-    right: 2em;
-    bottom: 2em;
+    right: 3vw;
+    bottom: 3vh;
 
     pointer-events: all;
 }
@@ -120,13 +75,12 @@ p.menuOptionsItem:hover{
 }
 
 .titleAlt{
-    position: fixed;
-    top: 2em; 
-    left: 2em;
-    right: 2em;
+    position:  fixed;
+    left: 5vw;
+    right: 5vw;
+    top: 8vh; 
     
-    height: 100%;
-    
+    pointer-events: none;
     pointer-events: none;
 }
 

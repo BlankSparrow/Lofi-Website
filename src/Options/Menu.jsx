@@ -38,14 +38,16 @@ class Menu extends React.Component {
         document.getElementById('animation-to-page-1').beginElement();
         document.getElementById('animation-to-page-2').beginElement();
         document.getElementById('animation-to-page-3').beginElement();
-            document.getElementById('menuMask').style.width = "100%";
+            document.getElementById('menuMask').style.width = "96vw";
+            document.getElementById('menuMaskTitle').style.width = "96vw";
             document.getElementById('svg').style.fill='white';
         } else {
         document.getElementById('animation-to-button-1').beginElement();
         document.getElementById('animation-to-button-2').beginElement();
         document.getElementById('animation-to-button-3').beginElement();
             
-            document.getElementById('menuMask').style.width = "0.01%";
+            document.getElementById('menuMask').style.width = "0.001vw";
+            document.getElementById('menuMaskTitle').style.width = "0.001vw";
             
             document.getElementById('svg').style.fill='deeppink';
         }
@@ -56,17 +58,20 @@ class Menu extends React.Component {
      <div>
         <Border/>
         <div className="menuContainer" align="right">
-            
-            <div className="menuMask" id="menuMask" align="left">
-            <div className="menuContent">
-                <div className="titleAlt">
+            <div className="menuMaskTitle" id="menuMaskTitle" align="left" style={{width: 0.001 + 'vw'}}>
+            <div className="titleAlt">
                     <img src={TitleAlt} alt="TitleAlt" />
                 </div>
+            </div>
+            <div className="menuMask" id="menuMask" align="left" style={{width: 0.001 + 'vw'}}>
+            <div className="menuContent">
+                
                 <div className="menuOptions">
                     <p className="menuOptionsItem">sample</p>
                     <p className="menuOptionsItem">sample</p>
                     <p className="menuOptionsItem">sample</p>
-                    <p className="menuOptionsItem">search</p>
+                    
+                    <input type="text" placeholder="Search.."/>
                 </div>
             </div>
             </div>

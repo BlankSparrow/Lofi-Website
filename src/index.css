@@ -6,21 +6,18 @@
 html {
    margin: 0px;
     padding:0px;
-   height: 100%;
-   width: 100%;
-}
-
-head {
-   margin: 0px;
-   max-height: 0%;
-padding:0px;
-   font-family: sans-serif;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
 
 body {
    margin: 0px;
-   min-height: 100%;
+   top: 0px;
+    bottom: 0px;
 padding:0px;
-   width: 100%;
+    left: 0px;
+    right: 0px;
    font-family: sans-serif;
 }

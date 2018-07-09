@@ -1,11 +1,30 @@
-.border {
+.border-1 {
+    position: fixed;
     border: 1em;
     border-style:solid;
+    border-bottom-style: none;
     border-color: deeppink;
-    position: fixed;
-    left: 20px;
-    right: 20px;
-    top: 20px;
-    bottom: 20px ;
+    
+    height: 50vh;
+    top: 2vh;
+    left: 2vw;
+    right: 2vw;
     pointer-events: none;
+    
+    transition: 150ms;   
+}
+
+.border-2 {
+    position: fixed;
+    border: 1em;
+    border-style:solid;
+    border-top-style: none;
+    border-color: deeppink;
+    bottom: 2vh;
+    height: 50vh;
+    left: 2vw;
+    right: 2vw;
+    pointer-events: none;
+    
+    transition: 150ms;   
 }

@@ -31,18 +31,16 @@
 .page{
     position: relative;
     flex: auto;
-    
     overflow: hidden;
-    
 }
 
 .content{
     position: relative;
-    margin-top: 17vw;
-    margin-bottom: 15vw;
-    padding-left: 4em;
-    padding-right: 4em;
-    max-width: 40em;
+    margin-top: 20vmax;
+    margin-bottom: 1vmax;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    max-width: 70vmax;
     margin-left: auto;
     margin-right: auto;
     pointer-events: all;
@@ -50,13 +48,19 @@
 
 .title{
     position:  fixed;
-    left: 2em;
-    right: 2em;
-    top: 2em; 
+    left: 5vw;
+    right: 5vw;
+    top: 8vh; 
     
     pointer-events: none;
 }
 
 ::-webkit-scrollbar { 
     display: none; 
+}
+
+.bar{
+    max-width: 70vmax;
+    height: 0.5em;
+    background-color: deeppink;
 }
