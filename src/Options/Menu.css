@@ -1,0 +1,132 @@
+.menuContainer{
+    position: fixed;
+    left: 2em;
+    right: 2em;
+    top: 2em;
+    bottom: 2em;
+    pointer-events: none;
+}
+
+.menuMask{
+    position:relative;
+    transform: scaleX(0.01%);
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    right: 0px;
+    background-color: deeppink;
+    transition: 500ms;
+    transition-timing-function: cubic-bezier(0.12,0.0,0.23,1);
+    pointer-events: none;
+}
+
+.menuMask.Active{
+    transform: scaleX(10%);
+    will-change: transform;
+    pointer-events: all;
+}
+
+.menuContent{
+    position:absolute;
+    left: 4em;
+    width: 100%;
+    bottom: 4em;
+    font-size:12pt;
+    pointer-events: all;
+}
+
+.menuButton{
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+
+    pointer-events: all;
+}
+
+#svg{
+    transition: 300ms;
+}
+
+////////////////////////////////////////////////////////
+.menuContainer{
+    position: fixed;
+    left: 2em;
+    right: 2em;
+    top: 2em;
+    bottom: 2em;
+    pointer-events: none;
+}
+
+.menuMask{
+    position:relative;
+    width: 0.01%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    right: 0px;
+    background-color: deeppink;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);
+    transition: 300ms;
+    
+    transition-timing-function: cubic-bezier(0.12,0.0,0.23,1);
+    pointer-events: none;
+}
+
+.menuMask.Active{
+    width: 100%;
+        pointer-events: all;
+}
+
+.menuContent{
+    position: fixed;
+    left: 0em;
+    bottom: 4em;
+    top: 0em;
+    font-size:12pt;
+    pointer-events: all;
+}
+
+.menuOptions{
+    position: fixed;
+    bottom: 4em;
+    left: 4em;
+    color: white;
+    
+}
+p.menuOptionsItem{
+    font-size: 2em;
+    margin-top: 0.2em;
+    color: white;
+}
+
+p.menuOptionsItem:hover{
+    font-size: 2em;
+    margin-top: 0.2em;
+    
+    color: black;
+}
+
+.menuButton{
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+
+    pointer-events: all;
+}
+
+#svg{
+    transition: 300ms;
+}
+
+.titleAlt{
+    position: fixed;
+    top: 2em; 
+    left: 2em;
+    right: 2em;
+    
+    height: 100%;
+    
+    pointer-events: none;
+}
+

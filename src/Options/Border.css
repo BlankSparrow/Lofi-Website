@@ -1,0 +1,11 @@
+.border {
+    border: 1em;
+    border-style:solid;
+    border-color: deeppink;
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px ;
+    pointer-events: none;
+}
