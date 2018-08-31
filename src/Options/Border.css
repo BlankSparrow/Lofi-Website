@@ -1,14 +1,14 @@
 .border-1 {
     position: fixed;
     border: 1em;
+    margin: -1em;
     border-style:solid;
     border-bottom-style: none;
     border-color: deeppink;
-    
     height: 50vh;
-    top: 2vh;
-    left: 2vw;
-    right: 2vw;
+    top: 4vh;
+    left: 4vw;
+    right: 4vw;
     pointer-events: none;
     
     transition: 150ms;   
@@ -17,14 +17,211 @@
 .border-2 {
     position: fixed;
     border: 1em;
+    margin: -1em;
     border-style:solid;
     border-top-style: none;
     border-color: deeppink;
-    bottom: 2vh;
+    bottom: 4vh;
     height: 50vh;
-    left: 2vw;
-    right: 2vw;
+    left: 4vw;
+    right: 4vw;
     pointer-events: none;
     
     transition: 150ms;   
+}
+
+
+
+
+.border-top {
+    position: fixed;
+    top: 0vh;
+    width: 100vw;
+    height: 4em;
+    cursor: pointer;
+    animation: border-top 5s linear infinite;
+    background: deeppink;
+  }
+
+.border-bottom {
+    position: fixed;
+    bottom: 0vh;
+    width: 100vw;
+    height: 4em;
+    cursor: pointer;
+    animation: border-bottom 5s linear infinite;
+    background: deeppink;
+  }
+  
+.border-left {
+    position: fixed;
+    left: 0vw;
+    top: 0vh;
+    width: 4em;
+    height: 100vh;
+    cursor: pointer;
+    animation: border-left 5s linear infinite;
+    background: deeppink;
+  }
+
+.border-right {
+    position: fixed;
+    right: 0vw;
+    top: 0vh;
+    width: 4em;
+    height: 100vh;
+    cursor: pointer;
+    animation: border-right 5s linear infinite;
+    background: deeppink;
+  }
+
+:root {
+
+    --tl-o-0: 1.4em 1.6em;
+    --tl-i-0: 1.9em 2.6em;
+    --tl-o-1: 1.2em 1.8em;
+    --tl-i-1: 1.7em 2.8em;
+    --tl-o-2: 1.5em 1.9em;
+    --tl-i-2: 2.0em 2.9em;
+    --tl-o-3: 1.1em 1.4em;
+    --tl-i-3: 1.6em 2.4em; 
+
+    --lt-o-0: 1.4em 1.6em;
+    --lt-i-0: 2.4em 2.1em;
+    --lt-o-1: 1.2em 1.8em;
+    --lt-i-1: 2.2em 2.3em;
+    --lt-o-2: 1.5em 1.9em;
+    --lt-i-2: 2.5em 2.4em;
+    --lt-o-3: 1.1em 1.4em;
+    --lt-i-3: 2.1em 2.1em; 
+
+    --tr-o-0: calc(100vw - 1.3em) 1.5em;
+    --tr-i-0: calc(100vw - 1.7em) 2.5em;
+    --tr-o-1: calc(100vw - 1.9em) 1.3em;
+    --tr-i-1: calc(100vw - 2.4em) 2.3em;
+    --tr-o-2: calc(100vw - 1.4em) 1.2em;
+    --tr-i-2: calc(100vw - 1.9em) 2.2em;
+    --tr-o-3: calc(100vw - 1.6em) 1.8em;
+    --tr-i-3: calc(100vw - 2.1em) 2.8em;
+
+
+    --rt-o-0: 2.7em 1.5em;
+    --rt-i-0: 1.7em 2.0em;
+    --rt-o-1: 2.1em 1.3em;
+    --rt-i-1: 1.1em 1.8em;
+    --rt-o-2: 2.6em 1.2em;
+    --rt-i-2: 1.6em 1.7em; 
+    --rt-o-3: 2.4em 1.8em;
+    --rt-i-3: 1.4em 2.3em;
+
+
+    --bl-o-0: 1.3em 2.9em;
+    --bl-i-0: 1.8em 1.9em;
+    --bl-o-1: 1.1em 2.3em;
+    --bl-i-1: 1.6em 1.3em;
+    --bl-o-2: 1.5em 2.1em;
+    --bl-i-2: 2.0em 1.1em;
+    --bl-o-3: 1.7em 2.5em;
+    --bl-i-3: 2.2em 1.5em; 
+
+    --lb-o-0: 1.3em calc(100vh - 1.1em);
+    --lb-i-0: 2.3em calc(100vh - 1.6em);
+    --lb-o-1: 1.1em calc(100vh - 1.7em);
+    --lb-i-1: 2.1em calc(100vh - 2.2em);
+    --lb-o-2: 1.5em calc(100vh - 1.9em);
+    --lb-i-2: 2.5em calc(100vh - 2.4em);
+    --lb-o-3: 1.7em calc(100vh - 1.5em);
+    --lb-i-3: 2.7em calc(100vh - 2.0em);
+
+    --br-o-0: calc(100vw - 1.3em) 2.7em;
+    --br-i-0: calc(100vw - 1.8em) 1.7em;
+    --br-o-1: calc(100vw - 1.5em) 2.9em;
+    --br-i-1: calc(100vw - 2.0em) 1.9em;
+    --br-o-2: calc(100vw - 1.3em) 2.5em;
+    --br-i-2: calc(100vw - 1.8em) 1.5em;
+    --br-o-3: calc(100vw - 1.6em) 2.3em;
+    --br-i-3: calc(100vw - 2.1em) 1.3em;
+
+    --rb-o-0: 2.7em calc(100vh - 1.3em);
+    --rb-i-0: 1.7em calc(100vh - 1.8em);
+    --rb-o-1: 2.5em calc(100vh - 1.1em);
+    --rb-i-1: 1.5em calc(100vh - 1.6em);
+    --rb-o-2: 2.7em calc(100vh - 1.5em);
+    --rb-i-2: 1.7em calc(100vh - 2.0em);
+    --rb-o-3: 2.4em calc(100vh - 1.7em);
+    --rb-i-3: 1.4em calc(100vh - 2.2em);
+}
+
+
+@keyframes border-top {
+    0%{
+        clip-path: polygon( var(--tl-o-0), var(--tr-o-0), var(--tr-i-0), var(--tl-i-0));
+     }
+    25% {
+        clip-path: polygon( var(--tl-o-1), var(--tr-o-1), var(--tr-i-1), var(--tl-i-1));
+    }
+    50% {
+        clip-path: polygon( var(--tl-o-2), var(--tr-o-2), var(--tr-i-2), var(--tl-i-2));
+    }
+    75% {
+        clip-path: polygon( var(--tl-o-3), var(--tr-o-3), var(--tr-i-3), var(--tl-i-3));
+    }
+    100%{
+        clip-path: polygon( var(--tl-o-0), var(--tr-o-0), var(--tr-i-0), var(--tl-i-0));
+    }
+}
+
+@keyframes border-bottom {
+    0%{
+        clip-path: polygon( var(--bl-o-0), var(--br-o-0), var(--br-i-0), var(--bl-i-0));
+     }
+    25% {
+        clip-path: polygon( var(--bl-o-1), var(--br-o-1), var(--br-i-1), var(--bl-i-1));
+    }
+    50% {
+        clip-path: polygon( var(--bl-o-2), var(--br-o-2), var(--br-i-2), var(--bl-i-2));
+    }
+    75% {
+        clip-path: polygon( var(--bl-o-3), var(--br-o-3), var(--br-i-3), var(--bl-i-3));
+    }
+    100%{
+        clip-path: polygon( var(--bl-o-0), var(--br-o-0), var(--br-i-0), var(--bl-i-0));
+    }
+    }
+  
+    
+@keyframes border-left {
+    0%{
+        clip-path: polygon( var(--lt-o-0), var(--lt-i-0), var(--lb-i-0), var(--lb-o-0));
+    }
+    25% {
+        clip-path: polygon( var(--lt-o-1), var(--lt-i-1), var(--lb-i-1), var(--lb-o-1));
+    }
+    50% {
+        clip-path: polygon( var(--lt-o-2), var(--lt-i-2), var(--lb-i-2), var(--lb-o-2));
+    }
+    75% {
+        clip-path: polygon( var(--lt-o-3), var(--lt-i-3), var(--lb-i-3), var(--lb-o-3));
+    }
+    100%{
+        clip-path: polygon( var(--lt-o-0), var(--lt-i-0), var(--lb-i-0), var(--lb-o-0));
+    }
+}
+
+@keyframes border-right {
+    0%{
+        clip-path: polygon( var(--rt-o-0), var(--rt-i-0), var(--rb-i-0), var(--rb-o-0));
+    }
+    25% {
+        clip-path: polygon( var(--rt-o-1), var(--rt-i-1), var(--rb-i-1), var(--rb-o-1));
+    }
+    50% {
+        clip-path: polygon( var(--rt-o-2), var(--rt-i-2), var(--rb-i-2), var(--rb-o-2));
+    }
+    75% {
+        clip-path: polygon( var(--rt-o-3), var(--rt-i-3), var(--rb-i-3), var(--rb-o-3));
+    }
+    100%{
+        clip-path: polygon( var(--rt-o-0), var(--rt-i-0), var(--rb-i-0), var(--rb-o-0));
+    }
 }

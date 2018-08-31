@@ -9,27 +9,29 @@
 
 .menuMask{
     position:fixed;
-    height: 70vh;
-    bottom: 2vh;
-    right: 2vw;
+    height: 55vh;
+    bottom: 2em;
+    right: 2em;
     background-color: deeppink;
+    width: 0.001em;
     overflow: hidden;
     clip-path: inset(0 0 0 0);
-    transition: 150ms;    
-    transition-timing-function: cubic-bezier(0.12,0.0,0.23,1);
+    transition: 300ms;    
+    transition-timing-function: cubic-bezier(0.52,0.0,0.23,1);
     pointer-events: all;
 }
 
 .menuMaskTitle{
     position:fixed;
-    height: 70vh;
-    top: 2vh;
-    right: 2vw;
+    height: 55vh;
+    top: 2em;
+    right: 2em;
+    width: 0.001em;
     background-color: deeppink;
     overflow: hidden;
     clip-path: inset(0 0 0 0);
-    transition: 150ms;    
-    transition-timing-function: cubic-bezier(0.12,0.0,0.23,1);
+    transition: 300ms;    
+    transition-timing-function: cubic-bezier(0.52,0.0,0.23,1);
     pointer-events: all;
 }
 
@@ -64,8 +66,8 @@ p.menuOptionsItem:hover{
 
 .menuButton{
     position: fixed;
-    right: 3vw;
-    bottom: 3vh;
+    right: 4vw;
+    bottom: 4vh;
 
     pointer-events: all;
 }
@@ -74,13 +76,21 @@ p.menuOptionsItem:hover{
     transition: 300ms;
 }
 
+.title{
+    position:  fixed;
+    left: 5vw;
+    right: 5vw;
+    top: 5vh; 
+    
+    pointer-events: none;
+}
+
 .titleAlt{
     position:  fixed;
     left: 5vw;
     right: 5vw;
-    top: 8vh; 
+    top: 5vh; 
     
-    pointer-events: none;
     pointer-events: none;
 }
 

@@ -5,6 +5,8 @@ import ReactDOM from 'react-dom';
 import Border from './Border'
 import './Menu.css';
 import TitleAlt from '../svg/title_white.svg';
+import Title from '../svg/title.svg';
+
 /*
 ReactDOM.findDOMNode("menuButton").addEventListener('click', function() {
   
@@ -38,16 +40,16 @@ class Menu extends React.Component {
         document.getElementById('animation-to-page-1').beginElement();
         document.getElementById('animation-to-page-2').beginElement();
         document.getElementById('animation-to-page-3').beginElement();
-            document.getElementById('menuMask').style.width = "96vw";
-            document.getElementById('menuMaskTitle').style.width = "96vw";
+            document.getElementById('menuMask').style.width = "calc(100vw - 4em)";
+            document.getElementById('menuMaskTitle').style.width = "calc(100vw - 4em)";
             document.getElementById('svg').style.fill='white';
         } else {
         document.getElementById('animation-to-button-1').beginElement();
         document.getElementById('animation-to-button-2').beginElement();
         document.getElementById('animation-to-button-3').beginElement();
             
-            document.getElementById('menuMask').style.width = "0.001vw";
-            document.getElementById('menuMaskTitle').style.width = "0.001vw";
+            document.getElementById('menuMask').style.width = "0.001em";
+            document.getElementById('menuMaskTitle').style.width = "0.001em";
             
             document.getElementById('svg').style.fill='deeppink';
         }
@@ -57,16 +59,22 @@ class Menu extends React.Component {
         return (
      <div>
         <Border/>
+        <div className="title">
+            <img src={Title} alt="Title" />
+        </div>
         <div className="menuContainer" align="right">
-            <div className="menuMaskTitle" id="menuMaskTitle" align="left" style={{width: 0.001 + 'vw'}}>
+            <div className="menuMaskTitle" id="menuMaskTitle" align="left" style={{width: '0.001em'}}>
             <div className="titleAlt">
                     <img src={TitleAlt} alt="TitleAlt" />
                 </div>
             </div>
-            <div className="menuMask" id="menuMask" align="left" style={{width: 0.001 + 'vw'}}>
+            <div className="menuMask" id="menuMask" align="left" style={{width: '0.001em'}}>
             <div className="menuContent">
                 
                 <div className="menuOptions">
+                    <div onClick={this.handleIconClick}><Link to="/">Homes</Link></div>
+                    <div onClick={this.handleIconClick}><Link to="/category">Category</Link></div>
+                <div onClick={this.handleIconClick}><Link to="/products">Products</Link></div>
                     <p className="menuOptionsItem">sample</p>
                     <p className="menuOptionsItem">sample</p>
                     <p className="menuOptionsItem">sample</p>

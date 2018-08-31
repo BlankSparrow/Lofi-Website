@@ -36,23 +36,14 @@
 
 .content{
     position: relative;
-    margin-top: 20vmax;
-    margin-bottom: 1vmax;
+    margin-top: 14vmax;
+    margin-bottom: 14vmax;
     padding-left: 10vw;
     padding-right: 10vw;
-    max-width: 70vmax;
+    max-width: 60vmax;
     margin-left: auto;
     margin-right: auto;
     pointer-events: all;
-}
-
-.title{
-    position:  fixed;
-    left: 5vw;
-    right: 5vw;
-    top: 8vh; 
-    
-    pointer-events: none;
 }
 
 ::-webkit-scrollbar { 

@@ -4,9 +4,11 @@ import { Link, Route } from 'react-router-dom';
 import './Border.css';
 
 const Border = ({ match }) => {
-return( <div > 
-  <div className="border-1"/>
-    <div className="border-2"/> 
+return( 
+  <div > 
+    <div className="border-1"/>
+    <div className="border-2"/>
+    
   </div>
       )
 }

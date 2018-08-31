@@ -3,7 +3,6 @@ import { Link, Route, Switch } from 'react-router-dom';
 import Category from './Category';
 import Menu from './Options/Menu';
 
-import Title from './svg/title.svg';
 import './App.css';
 
 /* Home component */
@@ -65,9 +64,6 @@ class App extends React.Component {
             <Route path="/products" component={Products}/>
         </Switch>
         <div className="bar"/>
-        <div className="title">
-            <img src={Title} alt="Title" />
-        </div>
         </div>
       </div>
         <Menu />
